@@ -1,0 +1,33 @@
+
+table
+{
+  border: solid 1px #A9A9A9;
+  border-top: none;
+  padding: 10px;
+
+
+}
+
+caption
+{
+  background-color: maroon;
+  font-weight: bold;
+  color: white;
+}
+
+td, th
+{
+  padding: 5px;
+
+  border: solid 1px #A9A9A9;
+}
+th
+{
+  background-color: #D3D3D3;
+
+}
+img
+{
+  height: 400px;
+  width: 400px;
+}

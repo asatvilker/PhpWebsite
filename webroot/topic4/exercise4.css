@@ -1,0 +1,45 @@
+#head
+{
+  color: #D3D3D3;
+  background-color: red;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  padding-left: 600px;
+  padding-right: 600px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+fieldset
+{
+  border-color: red;
+  background-color: #FF6347;
+  margin-bottom: 20px;
+}
+legend
+{
+  color: #D3D3D3;
+  font-weight: bold;
+}
+p
+{
+  margin-bottom: 10px;
+}
+#end
+{
+  background-color: #FF7F50;
+  text-align: center;
+  padding-top: 10px;
+}
+input
+{
+  color: red;
+  font-weight: bold;
+   
+}
+label
+{
+  margin-right:20px;
+
+}
