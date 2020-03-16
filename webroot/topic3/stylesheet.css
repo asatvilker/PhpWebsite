@@ -3,16 +3,16 @@ html
   background-color:#F5F5F5 ;
   margin-top: 10px;
   margin-bottom: 0px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 0px;
+  margin-right: 0px;
 
 }
 hgroup, nav, article, footer
 {
   padding-top: 10px;
   background-color: #000080;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-bottom: 20px;
   padding-bottom: 10px;
   text-align: center;

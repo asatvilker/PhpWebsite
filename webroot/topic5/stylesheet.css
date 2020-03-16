@@ -1,0 +1,194 @@
+
+
+div#container
+{
+  position: relative;
+  top: 5em;
+
+}
+
+aside#left
+{
+position: absolute;
+left: 0em;
+top: 0em;
+width: 12em;
+
+
+}
+aside#right
+{
+position: absolute;
+right: 0em;
+top: 0em;
+width: 12em;
+
+
+}
+div#main
+{
+  position: absolute;
+  right: 15em;
+  top: 0em;
+  left:15em;
+  margin-left: 5em;
+  margin-right: 5em;
+  padding-top: 1em;
+  background-color: #F5F5F5;
+
+}
+
+div h2
+{
+  color: white;
+}
+div#main h2
+{
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+  font-style: normal;
+  padding-left: 1em;
+}
+a
+{
+  color: #FF4500;
+  padding-right: 5px;
+}
+h2
+{
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  font-style: italic;
+  padding-bottom: 10px;
+}
+h1
+{
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+footer
+{
+  position: absolute;
+  bottom: 0em;
+}
+
+header, nav
+{
+  float: left;
+  padding-top: 10px;
+  background-color: #000080;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+
+
+}
+nav{
+  width: 77.175em;
+  text-align: left;
+  padding-left: 40px;
+  padding-bottom: 25px;
+}
+header
+{
+  padding-left: 20px;
+  padding-right: 10px;
+}
+.box1
+{
+  margin-top: 10px;
+  padding: 10px;
+
+  background-color: #D2B48C;
+}
+aside#right .box2 p
+{
+  margin-left: 1em;
+  margin-bottom: 2em;
+  margin-top: 1em;
+}
+
+h3
+{
+  background-color: #000080;
+  padding: 5px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: white;
+  font-weight: bold;
+}
+.box2
+{
+  padding-bottom: 1em;
+  margin-top: 20px;
+  background-color: #F5F5F5;
+  width: 12em;
+}
+.row
+{
+  padding-right: 4em;
+  padding-bottom: 4em;
+  padding-top: 1em;
+}
+
+.row p
+{
+  float: left;
+  margin-left: 1em;
+  padding-top: 1em;
+
+}
+
+.row img{
+  float: left;
+  margin-left: 0.5em;
+}
+
+ul p
+{
+  color: white;
+  padding-bottom: 5px;
+}
+figure
+{
+  position: absolute;
+  right:0em;
+  top:0em;
+
+}
+.mainText
+{
+  width:12em;
+  height: 12em;
+  padding-left: 1.3em;
+}
+table
+{
+  padding-left: 1.3em;
+}
+td,th
+{
+  padding-bottom: 1em;
+}
+.box3
+{
+  padding-bottom: 1em;
+  margin-top: 20px;
+  background-color: #F5F5F5;
+  width: 12em;
+
+}
+.box3 p
+{
+  padding-left: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}

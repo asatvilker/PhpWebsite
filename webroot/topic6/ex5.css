@@ -1,0 +1,27 @@
+
+table, th, td {
+  border: 1px solid black;
+}
+th,td
+{
+  width: 2em;
+  height: 2em;
+  text-align: center;
+}
+td
+{
+  background-color: #DCDCDC;
+  color: #808080;
+  font-weight: bold;
+}
+
+.first, th
+{
+  background-color: black;
+  color: white;
+}
+
+caption, tfoot tr td
+{
+  background-color: orange;
+}
