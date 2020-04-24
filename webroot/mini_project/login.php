@@ -12,7 +12,7 @@ if ($conn->connect_error) {
 }
 if ($_SERVER['REQUEST_METHOD'] == POST){
 
- $sql = SELECT * FROM USERS WHERE email = $_POST['Email'] AND password = $_POST['Password'];
+ $sql = "SELECT * FROM USERS WHERE email = $_POST['Email'] AND password = $_POST['Password']";
  if ($conn->query($sql) === TRUE) {
       require(addpost.html);
  } else {
