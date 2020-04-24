@@ -1,0 +1,9 @@
+html, head, title, body, hgroup,h1, h2, h3, h4, h5, h6,  nav, article, p, iframe, article, aside,img,section, figure
+{
+  margin: 0em;
+  padding:0em;;
+  border: 0em;
+  font-size: 100%;
+  vertical-align: baseline;
+
+}

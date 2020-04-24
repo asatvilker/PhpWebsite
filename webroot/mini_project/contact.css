@@ -1,0 +1,189 @@
+body{
+  margin-left: 2em;
+  margin-right: 2em;
+}
+header{
+  background-color: #000080;
+  height: 5em;
+  display: flex;
+  align-items: center;
+  padding-left: 2em;
+  margin-bottom: 1em;
+}
+header a
+{
+  font-weight: bolder;
+  font-size: 1.2em;
+  position: absolute;
+  right: 3em;
+}
+h1
+{
+  color: white;
+  font-size: 1.5em;
+
+
+}
+nav
+{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 8em;
+  padding-right: 8em;
+  height: 3em;
+  background-color: #000080;
+
+}
+a
+{
+  color: white;
+  margin-left: 1em;
+  margin-right: 1em;
+  text-decoration: none;
+
+}
+div a
+{
+  color: black;
+  padding-top: 2.2em;
+}
+a:hover
+{
+  color: red;
+}
+article
+{
+
+  display: flex;
+  justify-content: center;
+
+  position: absolute;
+  left:12em;
+  top:10em;
+  background-color: #F5F5F5;
+  padding-left: 0em;
+  padding-right: 0em;
+  width: 65em;
+  height: 40em;
+
+
+}
+
+footer
+{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 5em;
+  position: absolute;
+  top: 51em;
+  width: 84em;
+  background-color: #000080;
+}
+
+footer p
+{
+  position: relative;
+  width: auto;
+  top:0em;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  margin-right: 2em;
+  margin-left: 2em;
+
+}
+.container
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+
+
+
+}
+.subcontainer
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 0em;
+  margin-left: 0em;
+
+  height: 21em;
+  width: 18em;
+}
+img.email
+{
+  position: absolute;
+  top: 12em;
+  width: 9em;
+  height: 9em;
+}
+img.phone
+{
+  position: absolute;
+  top: 11.5em;
+  width: 10em;
+  height: 10em;
+}
+img.linkedin
+{
+  position: absolute;
+  top: 10.5em;
+  width: 12em;
+  height: 12em;
+}
+h2
+{
+  font-size: 5em;
+  font-weight: bold;
+  font-family: sans-serif;
+  position: absolute;
+  left: 4em;
+  text-align: center;
+  margin-top: 0.5em;
+
+}
+.subcontainer p
+{
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+ figcaption.email
+{
+  margin-top: 3em;
+  font-size: 3em;
+  font-weight: bold;
+  font-family: sans-serif;
+  border: solid 1em;
+  border:none;
+}
+ figcaption.linkedin
+{
+  margin-top:   2.3em;
+  font-size: 3em;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+figcaption.phone
+{
+  margin-top: 2.6em;
+  font-size: 3em;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+a
+{
+  color: white;
+  margin-left: 1em;
+  margin-right: 1em;
+  text-decoration: none;
+}
+a:hover
+{
+  color: red;
+}
