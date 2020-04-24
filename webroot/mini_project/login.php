@@ -15,11 +15,15 @@ if ($_SERVER['REQUEST_METHOD'] == POST){
  $sql = "SELECT * FROM USERS";
  $result = $conn->query($sql);
 
- if ($result->num_rows > 0) {
+ if ($result->num_rows > 0)
+ {
     // output data of each row
     require 'addpost.html';
-} else {
+  }
+  else
+  {
     echo "0 results";
+  }
 }
 $conn->close();
 ?>
