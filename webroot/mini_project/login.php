@@ -2,9 +2,9 @@
 session_start();
 $dbhost = getenv("MYSQL_SERVICE_HOST");
 $dbport = getenv("MYSQL_SERVICE_PORT");
-$dbuser = 'root';
+$dbuser =  getenv("DATABASE_USER");
 $dbpwd = getenv("DATABASE_PASSWORD");
-$dbname = 'ecs417';
+$dbname = getenv("DATABASE_NAME");
 // Creates connection
 $conn = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
 
