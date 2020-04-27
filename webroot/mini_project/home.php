@@ -27,7 +27,7 @@
   <nav role="navigation">
       <a href="home.html">About me</a>
       <a href="#bio">Portfolio</a>
-      <a href="viewblog.php">Blog</a>
+      <a href="viewBlog.php">Blog</a>
       <a href="contact.html">Contact</a>
   </nav>
   <article>

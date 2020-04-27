@@ -47,12 +47,12 @@ if ($conn->connect_error) {
    <article>
      <?php
      $count = 0;
-     $generalquery = "SELECT * FROM BLOGS_TABLE ORDER BY Date DESC";
+     $generalquery = "SELECT * FROM BLOG_TABLE ORDER BY Date DESC";
      $result = $conn->query($generalquery);
      while($row = $result->fetch_assoc()) {
         $count= $count + 1;
         $temp = $row["Date"];
-        echo "<div id='"."disabled"."' class='"."hover"."' data-value='".$row["ID"]."'> <h3>" . $row["Title"]. "</h3> <p class="."date".">"."$row["Date"]"."</p><p>" . $row["Blog"]. "</p></div>";
+        echo "<div id='"."disabled"."' class='"."hover"."' data-value='".$row["ID"]."'> <h3>" . $row["Title"]. "</h3> <p class="."date".">".$row["Date"]."</p><p>" . $row["Blog"]. "</p></div>";
       }
       if (isset($_SESSION['user']))
       {
