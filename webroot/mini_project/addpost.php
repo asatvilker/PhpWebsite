@@ -13,8 +13,8 @@ if ($conn->connect_error) {
 }
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
-
-$sql= "INSERT INTO BLOG_TABLE (Title, Blog) VALUES ('".$_POST['title']."','".$_POST['blog']."')";
+$temp= date("l jS \of F Y h:i:s A");
+$sql= "INSERT INTO BLOG_TABLE ('Title', 'Blog' , 'Date') VALUES ('".$_POST['title']."','".$_POST['blog']."','".$temp."')";
 
   if($conn->query($sql))
   {
