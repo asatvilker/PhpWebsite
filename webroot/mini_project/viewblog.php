@@ -47,7 +47,7 @@ if ($conn->connect_error) {
    <article>
      <?php
      $count = 0;
-     $generalquery = "SELECT * FROM BLOGS_TABLE ORDER BY Date DESC";
+     $generalquery = "SELECT Title, Blog, Date FROM BLOGS_TABLE ORDER BY Date DESC";
      $result = $conn->query($generalquery);
      while($row = $result->fetch_assoc()) {
         $count= $count + 1;
