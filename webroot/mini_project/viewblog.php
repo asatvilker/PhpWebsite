@@ -52,7 +52,7 @@ if ($conn->connect_error) {
      while($row = $result->fetch_assoc()) {
         $count= $count + 1;
         $temp = strval($count);
-        echo "<div id='"."disabled"."' class='"."hover"."' data-value='".$row["ID"]."'> <h3>" . $row["Title"]. "</h3> <p class="."date".">" .$row["Date"]."</p><p>" . $row["Blog"]. "</p></div>";
+        echo "<div id='"."disabled"."' class='"."hover"."' data-value='".$row["Date"]."'> <h3>" . $row["Title"]. "</h3> <p class="."date".">".$row["Date"]."</p><p>" . $row["Blog"]. "</p></div>";
       }
       if (isset($_SESSION['user']))
       {
