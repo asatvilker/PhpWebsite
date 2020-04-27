@@ -4,13 +4,13 @@
    <title>Layouts</title>
    <link rel="stylesheet" href="reset.css" type="text/css"/>
    <link rel="stylesheet" href="addpost.css" type="text/css"/>
-   <script src="function.js"></script>
+
 </head>
 <body>
 
   <article>
     <h2>Add Blog</h2>
-    <form>
+    <form action="addpost.php" method="post">
       <p>
 
         <input id="title" type="text" name="title" placeholder="Title">
@@ -20,12 +20,12 @@
         <textarea id="maintext" name="blog" placeholder="Enter text here..." rows="20" cols="95"></textarea>
       </p>
       <p>
-      <input type="submit" value="Add"  class="addbutton">
-      <input type="button" value="Clear"  class="clearbutton" onclick= "clearcontent()">
+      <input id="submit" type="submit" value="Add"  class="addbutton">
+      <input type='button' value='Clear'  class="clearbutton" onclick= "clearcontent()">
       </p>
     </form>
 
   </article>
-
+  <script src="function.js"></script>
 </body>
 </html>

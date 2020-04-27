@@ -1,9 +1,10 @@
 <?php
+session_start();
 $dbhost = getenv("MYSQL_SERVICE_HOST");
 $dbport = getenv("MYSQL_SERVICE_PORT");
 $dbuser = 'root';
 $dbpwd = '';
-$dbname = 'USERS';
+$dbname = 'ecs417';
 // Creates connection
 $conn = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
 
@@ -19,7 +20,7 @@ $query = "SELECT * FROM DETAILS WHERE email LIKE '".$_POST['Email']."' AND passw
 
  if ($result->num_rows > 0)
  {
-
+    $_SESSION['user']='active';
     // output data of each row
     require 'addpost.html';
   }
