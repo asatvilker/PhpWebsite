@@ -25,10 +25,10 @@
     ?>
   </header>
   <nav role="navigation">
-      <a href="home.html">About me</a>
+      <a href="home.php">About me</a>
       <a href="#bio">Portfolio</a>
-      <a href="viewBlog.php">Blog</a>
-      <a href="contact.html">Contact</a>
+      <a href="viewblog.php">Blog</a>
+      <a href="contact.php">Contact</a>
   </nav>
   <article>
     <div class="aboutme">

@@ -28,8 +28,8 @@
 
       <a href="home.php">About me</a>
       <a href="#bio">Portfolio</a>
-      <a href="viewBlog">Blog</a>
-      <a href="contact.html">Contact</a>
+      <a href="viewblog">Blog</a>
+      <a href="contact.php">Contact</a>
   </nav>
   <article>
     <h2>Contact Me</h2>
