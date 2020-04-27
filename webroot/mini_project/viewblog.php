@@ -20,7 +20,7 @@ if ($conn->connect_error) {
     <title>Layouts</title>
     <link rel="stylesheet" href="reset.css" type="text/css"/>
 
-    <link rel="stylesheet" href="viewBlog.css" type="text/css"/>
+    <link rel="stylesheet" href="viewblog.css" type="text/css"/>
  </head>
  <body>
    <header>
