@@ -18,7 +18,7 @@ $sql= "INSERT INTO BLOGS_TABLE (Title, Blog) VALUES ('".$_POST['title']."','".$_
 
   if($conn->query($sql))
   {
-     require 'viewblog.php';
+     require 'viewBlog.php';
 
    }
   else{

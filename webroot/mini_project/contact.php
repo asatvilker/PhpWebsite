@@ -1,3 +1,7 @@
+<?php
+  session_start();
+
+ ?>
 <html>
 <head lang="en">
    <meta charset="utf-8">
@@ -9,13 +13,22 @@
 <body>
   <header>
     <h1>Adam Satvilker</h1>
-    <a href="login.html">Login</a>
+    <?php
+    if (isset($_SESSION['user']))
+    {
+      echo "<a href='"."logout.php"."'>Logout</a>";
+    }
+    else
+    {
+      echo "<a href='"."login.html"."'>Login</a>";
+    }
+    ?>
   </header>
   <nav role="navigation">
 
-      <a href="home.html">About me</a>
+      <a href="home.php">About me</a>
       <a href="#bio">Portfolio</a>
-      <a href="#hobbies">Blog</a>
+      <a href="viewBlog">Blog</a>
       <a href="contact.html">Contact</a>
   </nav>
   <article>
