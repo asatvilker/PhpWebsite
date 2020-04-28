@@ -1,4 +1,6 @@
-<?php session_start(); ?>
+<?php session_start();
+
+?>
 
 <html>
 <head lang="en">
@@ -12,7 +14,7 @@
 
   <article>
     <h2>Add Blog</h2>
-    <form method="post">
+    <form method="post" action="submitpost.php">
       <p>
 
         <input id="title" type="text" name="title" placeholder="Title" value="<?php if(isset($_SESSION['Title'])){echo htmlentities($_SESSION['Title']);}?>">
@@ -22,8 +24,8 @@
         <textarea id="maintext" name="blog" placeholder="Enter text here..." rows="20" cols="95" value="<?php if(isset($_SESSION['Blog'])){echo htmlentities($_SESSION['Blog']);}?>"></textarea>
       </p>
       <p>
-      <button id ="preview" type="submit" onclick="preview.php">Preview</button>
-      <button id="submit" type="submit"  class="addbutton" onclick="submitpost.php">Add</button>
+      <input id ="preview" type="submit" value="preview" formaction="preview.php">
+      <input id="submit" type="submit"  class="addbutton" value="Post">
       <input type='button' value='Clear'  class="clearbutton" onclick= "clearcontent()">
       </p>
     </form>
