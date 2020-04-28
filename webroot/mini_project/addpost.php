@@ -1,30 +1,34 @@
-<?php
-$dbhost = getenv("MYSQL_SERVICE_HOST");
-$dbport = getenv("MYSQL_SERVICE_PORT");
-$dbuser =  getenv("DATABASE_USER");
-$dbpwd = getenv("DATABASE_PASSWORD");
-$dbname = getenv("DATABASE_NAME");
-// Creates connection
-$conn = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
+<?php session_start(); ?>
 
-// Checks connection
-if ($conn->connect_error) {
- die("Connection failed: " . $conn->connect_error);
-}
-if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+<html>
+<head lang="en">
+   <meta charset="utf-8">
+   <title>Layouts</title>
+   <link rel="stylesheet" href="reset.css" type="text/css"/>
+   <link rel="stylesheet" href="addpost.css" type="text/css"/>
 
+</head>
+<body>
 
-$sql= "INSERT INTO BLOGS_TABLE (Title, Blog) VALUES ('".$_POST['title']."','".$_POST['blog']."')";
+  <article>
+    <h2>Add Blog</h2>
+    <form action="submitpost.php" method="post">
+      <p>
 
-  if($conn->query($sql))
-  {
-     require 'viewblog.php';
+        <input id="title" type="text" name="title" placeholder="Title" value="<?php if(isset($_SESSION['Title'])){echo htmlentities($_SESSION['Title']);}?>">
+      </p>
+      <p>
 
-   }
-  else{
-   echo $sql;
- }
-}
+        <textarea id="maintext" name="blog" placeholder="Enter text here..." rows="20" cols="95" value="<?php if(isset($_SESSION['Blog'])){echo htmlentities($_SESSION['Blog']);}?>"></textarea>
+      </p>
+      <p>
+      <input id ="preview" type="submit" value="Preview" onclick="preview.php">
+      <input id="submit" type="submit" value="Add"  class="addbutton">
+      <input type='button' value='Clear'  class="clearbutton" onclick= "clearcontent()">
+      </p>
+    </form>
 
- $conn->close();
- ?>
+  </article>
+  <script src="function.js"></script>
+</body>
+</html>

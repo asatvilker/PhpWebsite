@@ -12,7 +12,8 @@ $conn = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
 if ($conn->connect_error) {
  die("Connection failed: " . $conn->connect_error);
 }
-
+$_SESSION['Title']=$_POST['title'];
+$_SESSION['Blog']=$_POST['blog'];
  ?>
  <html>
  <head lang="en">
@@ -46,17 +47,19 @@ if ($conn->connect_error) {
    </nav>
    <article>
      <?php
-     $count = 0;
+
+     echo "<div id='"."disabled"."' class='"."hover"."'> <h3>" . $_SESSION['Title']. "</h3> <p class="."date".">".date(" Y-m-d h:i:s")."</p><p>" .$_SESSION['Blog']. "</p></div>";
      $generalquery = "SELECT Title, Blog, Date FROM BLOGS_TABLE ORDER BY Date DESC";
      $result = $conn->query($generalquery);
      while($row = $result->fetch_assoc()) {
-        $count= $count + 1;
+
 
         echo "<div id='"."disabled"."' class='"."hover"."' data-value='".$row["ID"]."'> <h3>" . $row["Title"]. "</h3> <p class="."date".">".$row["Date"]."</p><p>" . $row["Blog"]. "</p></div>";
       }
       if (isset($_SESSION['user']))
       {
-        echo "<a id='"."addpost"."'href='"."addpost.php"."'>Add post</a>";
+        echo "<a id='"."addpost"."'href='"."submitpost.php"."'>Submit post</a>";
+        echo "<a id='"."back"."'href='"."addpost.php"."'>Back</a>";
       }
       else
       {
