@@ -12,7 +12,7 @@
 
   <article>
     <h2>Add Blog</h2>
-    <form action="submitpost.php" method="post">
+    <form  method="post">
       <p>
 
         <input id="title" type="text" name="title" placeholder="Title" value="<?php if(isset($_SESSION['Title'])){echo htmlentities($_SESSION['Title']);}?>">
@@ -23,7 +23,7 @@
       </p>
       <p>
       <input id ="preview" type="button" value="Preview" onclick="preview.php">
-      <input id="submit" type="submit" value="Add"  class="addbutton">
+      <input id="submit" type="submit" value="Add"  class="addbutton" onclick="submitpost.php">
       <input type='button' value='Clear'  class="clearbutton" onclick= "clearcontent()">
       </p>
     </form>
