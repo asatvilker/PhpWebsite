@@ -22,7 +22,7 @@ $query = "SELECT * FROM DETAILS WHERE email LIKE '".$_POST['Email']."' AND passw
  {
     $_SESSION['user']='active';
     // output data of each row
-    require 'addpost.html';
+    require 'addpost.php';
   }
   else
   {
