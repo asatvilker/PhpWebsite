@@ -22,7 +22,7 @@
         <textarea id="maintext" name="blog" placeholder="Enter text here..." rows="20" cols="95" value="<?php if(isset($_SESSION['Blog'])){echo htmlentities($_SESSION['Blog']);}?>"></textarea>
       </p>
       <p>
-      <input id ="preview" type="submit" value="Preview" onclick="preview.php">
+      <input id ="preview" type="button" value="Preview" onclick="preview.php">
       <input id="submit" type="submit" value="Add"  class="addbutton">
       <input type='button' value='Clear'  class="clearbutton" onclick= "clearcontent()">
       </p>
