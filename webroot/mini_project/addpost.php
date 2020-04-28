@@ -21,7 +21,7 @@
       </p>
       <p>
 
-        <textarea id="maintext" name="blog" placeholder="Enter text here..." rows="20" cols="95" value="<?php if(isset($_SESSION['Blog'])){echo htmlentities($_SESSION['Blog']);}?>"></textarea>
+        <textarea id="maintext" name="blog" placeholder="Enter text here..." rows="20" cols="95"><?php if(isset($_SESSION['Blog'])){echo htmlentities($_SESSION['Blog']);}?></textarea>
       </p>
       <p>
       <input id ="preview" type="submit" value="preview" formaction="preview.php">
