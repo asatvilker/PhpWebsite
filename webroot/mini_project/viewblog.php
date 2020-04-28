@@ -41,7 +41,7 @@ if ($conn->connect_error) {
        <a href="home.php">About me</a>
        <a href="#bio">Portfolio</a>
        <a href="viewblog.php">Blog</a>
-       <a href="contact.html">Contact</a>
+       <a href="contact.php">Contact</a>
 
    </nav>
    <article>
