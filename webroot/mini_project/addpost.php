@@ -24,7 +24,7 @@
         <textarea id="maintext" name="blog" placeholder="Enter text here..." rows="20" cols="95"><?php if(isset($_SESSION['Blog'])){echo htmlentities($_SESSION['Blog']);}?></textarea>
       </p>
       <p>
-      <input id ="preview" type="submit" value="preview" formaction="preview.php">
+      <input id ="preview" type="submit" class="previewbutton" value="preview" formaction="preview.php">
       <input id="submit" type="submit"  class="addbutton" value="Post">
       <input type='button' value='Clear'  class="clearbutton" onclick= "clearcontent()">
       </p>

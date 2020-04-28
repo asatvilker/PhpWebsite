@@ -51,7 +51,7 @@ textarea{
   font-size: 1em;
   padding: 1em;
 }
-.addbutton
+.addbutton, .clearbutton, .previewbutton
 {
   width: 6em;
   height: 3em;
@@ -60,24 +60,20 @@ textarea{
   text-align: center;
   padding-left: 0em;
   padding-right: 0em;
-  background-color: #000080;
+  background-color: green;
   color: white;
   margin-right: 1em;
 
 }
 .clearbutton
 {
-  width: 6em;
-  height: 3em;
-  margin-top: 2em;
-  font-size: 1.5em;
-  text-align: center;
-  padding-left: 0em;
-  padding-right: 0em;
+
   background-color: red;
-  color: white;
-  margin-right: 1em;
-  
+
+}
+.previewbutton
+{
+  background-color: #000080;
 }
 p
 {
@@ -85,12 +81,7 @@ p
   justify-content: center;
   text-align: center;
 }
-.addbutton:hover
-{
-
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-.clearbutton:hover
+.addbutton:hover, .clearbutton:hover, .previewbutton:hover
 {
 
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
