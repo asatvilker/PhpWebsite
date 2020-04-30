@@ -15,7 +15,7 @@ if ($conn->connect_error) {
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 $email=$_POST['Email'];
 $pass=$_POST['Password'];
-$query = "SELECT * FROM DETAILS WHERE email LIKE '".$_POST['Email']."' AND password LIKE '".$_POST['Password']."'";
+$query = "SELECT * FROM DETAILS WHERE email LIKE '".$_POST['Email']."' AND password LIKE '".$_POST['Password']."' COLLATE SQL_Latin1_General_CP1_CS";
  $result = $conn->query($query);
 
  if ($result->num_rows > 0)

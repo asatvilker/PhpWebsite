@@ -14,7 +14,7 @@ if ($conn->connect_error) {
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 
-$sql= "INSERT INTO BLOGS_TABLE (Title, Blog) VALUES ('".$_POST['title']."','".$_POST['blog']."') COLLATE SQL_Latin1_General_CP1_CS";
+$sql= "INSERT INTO BLOGS_TABLE (Title, Blog) VALUES ('".$_POST['title']."','".$_POST['blog']."')";
 
   if($conn->query($sql))
   {
