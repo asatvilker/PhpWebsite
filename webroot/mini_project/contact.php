@@ -28,7 +28,7 @@
 
       <a href="home.php">About me</a>
       <a href="#bio">Portfolio</a>
-      <a href="viewblog">Blog</a>
+      <a href="viewblog.php">Blog</a>
       <a href="contact.php">Contact</a>
   </nav>
   <article>
