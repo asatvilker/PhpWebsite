@@ -1,6 +1,10 @@
 body{
   margin-left: 2em;
   margin-right: 2em;
+  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: unset;
 }
 header{
   background-color: #000080;
@@ -58,14 +62,16 @@ article
   display: flex;
   justify-content: center;
 
-  position: absolute;
-  left:12em;
+  position: relative;
+
   top:10em;
   background-color: #F5F5F5;
   padding-left: 0em;
   padding-right: 0em;
-  width: 65em;
-  height: 40em;
+  width: auto;
+  height: auto;
+  margin-left: 10em;
+  margin-right: 10em;
 
 
 }
@@ -76,9 +82,11 @@ footer
   align-items: center;
   justify-content: flex-start;
   height: 5em;
-  position: absolute;
-  top: 51em;
-  width: 84em;
+  position: relative;
+  top: 1em;
+  width: auto;
+  margin-left: 10em;
+  margin-right: 10em;
   background-color: #000080;
 }
 

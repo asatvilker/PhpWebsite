@@ -1,6 +1,10 @@
 body{
   margin-left: 2em;
   margin-right: 2em;
+  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: unset;
 }
 header{
   background-color: #000080;
@@ -50,23 +54,20 @@ a:hover
 }
 article
 {
-
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   position: relative;
-  left:12em;
   top:1em;
   background-color: #F5F5F5;
   padding-left: 0em;
   padding-right: 0em;
-  width: 65em;
+  width: auto;
   height: auto;
   padding-top: 1em;
   padding-bottom: 1em;
-
-
-
+  margin-left: 10em;
+  margin-right: 10em;
 }
 
 footer
@@ -77,7 +78,9 @@ footer
   height: 5em;
   position:relative;
   top:1em;
-  width: 84em;
+  width: auto;
+  margin-left: 10em;
+  margin-right: 10em;
   background-color: #000080;
   margin-top:1em
 }
