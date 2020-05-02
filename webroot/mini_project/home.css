@@ -1,6 +1,9 @@
 body{
   margin-left: 2em;
   margin-right: 2em;
+  /* display: block; */
+  display: flex;
+  flex-direction: column;
 }
 header{
   background-color: #000080;
@@ -48,28 +51,14 @@ header a
   right: 3em;
 }
 article
-{
-
-
-  position: absolute;
-  left:2em;
-  top:10em;
-  background-color: #F5F5F5;
-  padding-left: 2em;
-  width: 65em;
-  height: 70em;
-
-
-}
+{position: relative;left: em;top: 2em;background-color: #F5F5F5;padding-left: 2em;padding-top: 2em;/* width: auto; *//* height: auto; */margin-right: 20em;/* display: flex; *//* align-items: flex-start; *//* justify-content: flex-start; *//* border: solid; */}
 aside
 {
   position: absolute;
   right: 2em;
-  top: 10em;
-
-
+  top: 11em;
   width: 15em;
-  height: auto;;
+  height: auto;
 }
 footer
 {
@@ -77,26 +66,26 @@ footer
   align-items: center;
   justify-content: flex-start;
   height: 5em;
-  position: absolute;
-  top: 82em;
-  width: 84em;
+  position: relative;
+  top: 2em;
+  width: auto;
   background-color: #000080;
 }
 
 section
 {
   display: flex;
-
+  position: relative;
 }
 img
 {
-  position: absolute;
-  right: 2em;
+  position: relative;
+  left: 50em;
   top: 2em;
 }
 h2
 {
-  position: absolute;
+  position: relative;
   left: 0em;
   top: 0em;
   font-size: 2em;
@@ -104,27 +93,21 @@ h2
   font-family: sans-serif;
 }
 div.aboutme
-{
-  position: absolute;
-  top: 0em;
-  width: inherit;
-  height: auto;
-  font-size: 1.5em;
-  font-style: oblique;
-
-}
+{/* border: solid; */position: relative;}
 div.education
 {
-  position: absolute;
-  top: 18em;
-  width: inherit;
+  position: relative;
+  /* top: 18em; */
+  width: auto;
   height: auto;
+  /* border: solid; */
 }
 div.Skills{
-  position: absolute;
-  top: 36em;
-  width: inherit;
-  height: auto;
+  position: relative;
+  /* top: 36em; */
+  /* width: auto; */
+  /* height: auto; */
+  /* border: solid; */
 }
 p
 {
@@ -133,8 +116,9 @@ p
   width: 30em;
 }
 table{
-  position: absolute;
-  top: 4em;
+  /* position: relative; */
+  /* top: 2em; */
+  /* position: relative; */
 }
 td,th
 {
@@ -149,12 +133,15 @@ td,th
 table, th, td {
   border-bottom: 1px solid black;
   border-collapse: collapse;
+  position: relative;
+  margin: 0em;
+  /* padding: 0em; */
 }
 .list1
 {
-  position: absolute;
+  position: relative;
   left: 1em;
-  top: 4em;
+  top: 0em;
   padding-left: 0em;
 }
 ul li
@@ -163,6 +150,7 @@ ul li
   font-family: sans-serif;
   font-weight: bold;
   padding-top: 0.3em;
+  /* position: relative; */
 }
 ul li ul li
 {
