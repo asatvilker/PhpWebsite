@@ -65,7 +65,7 @@ article
 
   position: relative;
 
-  top:10em;
+  margin-top: 10em;
   background-color: #F5F5F5;
   padding-left: 0em;
   padding-right: 0em;
@@ -84,10 +84,9 @@ footer
   justify-content: flex-start;
   height: 5em;
   position:relative;
-  top:1em;
+  margin-top: 10em;
   width: auto;
-  margin-left: 10em;
-  margin-right: 10em;
+
   background-color: #000080;
   margin-top:10em;
 }
@@ -117,9 +116,12 @@ footer p
   align-items: center;
   flex-direction: column;
   margin-right: 0em;
-  margin-left: 0em;
-  margin-top: 4em;
+  margin-left: em;
+  margin-top: 8em;
+  margin-bottom: 8em;
   width: 18em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 img.email
 {

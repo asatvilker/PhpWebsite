@@ -37,9 +37,9 @@ $query = "SELECT * FROM DETAILS WHERE email LIKE '".$_POST['Email']."' AND BINAR
        .error
        {
          color: red;
-         position: absolute;
-         left: 21em;
-         top: 31em;
+         position: relative;
+         right: 15em;
+         top: 16em;
        }
        </style>
     </head>
