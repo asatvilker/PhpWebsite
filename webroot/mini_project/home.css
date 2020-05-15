@@ -51,7 +51,16 @@ header a
   right: 3em;
 }
 article
-{position: relative;left: em;top: 2em;background-color: #F5F5F5;padding-left: 2em;padding-top: 2em;/* width: auto; *//* height: auto; */margin-right: 20em;/* display: flex; *//* align-items: flex-start; *//* justify-content: flex-start; *//* border: solid; */}
+{
+  position: relative;
+  left: em;
+  top: 2em;
+  background-color: #F5F5F5;
+  padding-left: 2em;
+  padding-top: 2em;
+  
+  margin-right: 20em;
+}
 aside
 {
   position: absolute;
@@ -93,21 +102,20 @@ h2
   font-family: sans-serif;
 }
 div.aboutme
-{/* border: solid; */position: relative;}
+{
+  position: relative;
+}
 div.education
 {
   position: relative;
-  /* top: 18em; */
+  margin-bottom: 4em;
   width: auto;
   height: auto;
-  /* border: solid; */
+  
 }
 div.Skills{
   position: relative;
-  /* top: 36em; */
-  /* width: auto; */
-  /* height: auto; */
-  /* border: solid; */
+  margin-bottom: 4em;
 }
 p
 {
@@ -115,11 +123,7 @@ p
   top:4em;
   width: 30em;
 }
-table{
-  /* position: relative; */
-  /* top: 2em; */
-  /* position: relative; */
-}
+
 td,th
 {
   padding-bottom: 1em;
@@ -135,7 +139,7 @@ table, th, td {
   border-collapse: collapse;
   position: relative;
   margin: 0em;
-  /* padding: 0em; */
+  
 }
 .list1
 {
@@ -150,7 +154,7 @@ ul li
   font-family: sans-serif;
   font-weight: bold;
   padding-top: 0.3em;
-  /* position: relative; */
+  
 }
 ul li ul li
 {

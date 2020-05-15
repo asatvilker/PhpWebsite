@@ -27,7 +27,7 @@
   <nav role="navigation">
 
       <a href="home.php">About me</a>
-      <a href="#bio">Portfolio</a>
+      <a href="portfolio.php">Portfolio</a>
       <a href="viewblog.php">Blog</a>
       <a href="contact.php">Contact</a>
   </nav>
@@ -37,7 +37,9 @@
       <div class="subcontainer">
         <img src="pngfuel.com (1).png" alt="email" class="email">
         <figcaption class="email">Email</figcaption>
-        <p>Personal Email: asatvilker.as@gmail.com <br>Student Email: ec19215@qmul.ac.uk</p>
+        <a href="mailto: asatvilker.as@gmail.com">Personal Email: asatvilker.as@gmail.com </a>
+        <a href="mailto: ec19215@qmul.ac.uk">Student Email: ec19215@qmul.ac.uk</a>
+        
       </div>
       <div class="subcontainer">
         <img src="5a452570546ddca7e1fcbc7d.png" alt="phone" class="phone">
@@ -47,7 +49,7 @@
       <div class="subcontainer">
         <img src="pngfuel.com.png" alt="linkedin" class="linkedin">
         <figcaption class="linkedin">Linkedin</figcaption>
-        <a href="www.linkedin.com/in/adam-satvilker">Click here</a>
+        <a href="https://www.linkedin.com/in/adam-satvilker/">Click here</a>
       </div>
     </div>
   </article>

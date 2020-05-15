@@ -26,7 +26,7 @@
   </header>
   <nav role="navigation">
       <a href="home.php">About me</a>
-      <a href="#bio">Portfolio</a>
+      <a href="portfolio.php">Portfolio</a>
       <a href="viewblog.php">Blog</a>
       <a href="contact.php">Contact</a>
   </nav>
@@ -35,7 +35,7 @@
       <section>
         <h2>About me</h2>
         <figure>
-          <img src="IMG_6293.JPG" height="200em" width="180em">
+          <img src="IMG_6293.JPG" height="250em" width="230em">
         </figure>
       </section>
       <p>I am a first year student studying Computer Science at Queen Mary University of London. I have acquired many skills on my journey so far and theres much more to come. Read on to find out exactly what I do and love, or feel free to have a look at some of my work.</p>
