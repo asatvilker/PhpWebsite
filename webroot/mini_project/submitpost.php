@@ -12,9 +12,23 @@ if ($conn->connect_error) {
  die("Connection failed: " . $conn->connect_error);
 }
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+  $sql= "INSERT INTO BLOGS_TABLE (Title, Blog) VALUES ('".$_POST['title']."','".$_POST['blog']."')";
+  if($conn->query($sql))
+  {
+    if(isset($_SESSION['Title']))
+    {
+      unset($_SESSION['Title']);
+    }
+    if (isset($_SESSION['Blog']))
+    {
+      unset($_SESSION['Blog']);
+    }
+    require 'viewblog.php';
 
-
-$sql= "INSERT INTO BLOGS_TABLE (Title, Blog) VALUES ('".$_POST['title']."','".$_POST['blog']."')";
+   }
+}
+elseif (isset($_SESSION['Title']) && isset($_SESSION['Blog'])) {
+  $sql= "INSERT INTO BLOGS_TABLE (Title, Blog) VALUES ('".$_POST['title']."','".$_POST['blog']."')";
 
   if($conn->query($sql))
   {
@@ -29,10 +43,11 @@ $sql= "INSERT INTO BLOGS_TABLE (Title, Blog) VALUES ('".$_POST['title']."','".$_
     require 'viewblog.php';
 
    }
+}
   else{
    echo $sql;
  }
-}
+
 
  $conn->close();
  ?>
