@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
    }
 }
 elseif (isset($_SESSION['Title']) && isset($_SESSION['Blog'])) {
-  $sql= "INSERT INTO BLOGS_TABLE (Title, Blog) VALUES ('".$_POST['title']."','".$_POST['blog']."')";
+  $sql= "INSERT INTO BLOGS_TABLE (Title, Blog) VALUES ('".$_SESSION['Title']."','".$_SESSION['Blog']."')";
 
   if($conn->query($sql))
   {
