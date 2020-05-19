@@ -6,7 +6,7 @@ $dbpwd = getenv("DATABASE_PASSWORD");
 $dbname = getenv("DATABASE_NAME");
 // Creates connection
 $conn = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
-
+session_start();
 // Checks connection
 if ($conn->connect_error) {
  die("Connection failed: " . $conn->connect_error);
