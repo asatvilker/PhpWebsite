@@ -6,7 +6,7 @@
 <html>
 <head lang="en">
    <meta charset="utf-8">
-   <title>Layouts</title>
+   <title>Adam satvilker</title>
    <link rel="stylesheet" href="reset.css" type="text/css"/>
    <link rel="stylesheet" href="home.css" type="text/css"/>
 </head>

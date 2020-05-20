@@ -17,7 +17,7 @@ if ($conn->connect_error) {
  <html>
  <head lang="en">
     <meta charset="utf-8">
-    <title>Layouts</title>
+    <title>Adam satvilker</title>
     <link rel="stylesheet" href="reset.css" type="text/css"/>
 
     <link rel="stylesheet" href="viewblog.css" type="text/css"/>
@@ -39,7 +39,7 @@ if ($conn->connect_error) {
    <nav role="navigation">
 
        <a href="home.php">About me</a>
-       <a href="#bio">Portfolio</a>
+       <a href="portfolio.php">Portfolio</a>
        <a href="viewblog.php">Blog</a>
        <a href="contact.php">Contact</a>
 

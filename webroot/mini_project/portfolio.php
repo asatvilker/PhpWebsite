@@ -5,7 +5,7 @@
 <html>
 <head lang="en">
    <meta charset="utf-8">
-   <title>Layouts</title>
+   <title>Adam satvilker</title>
    <link rel="stylesheet" href="reset.css" type="text/css"/>
    <link rel="stylesheet" href="portfolio.css" type="text/css"/>
 </head>
@@ -25,7 +25,7 @@
   </header>
   <nav role="navigation">
       <a href="home.php">About me</a>
-      <a href="#bio">Portfolio</a>
+      <a href="portfolio.php">Portfolio</a>
       <a href="viewblog.php">Blog</a>
       <a href="contact.php">Contact</a>
   </nav>
@@ -50,5 +50,11 @@
 </div>
 
   </article>
+  <footer>
+    <p>
+      <em>Copyright &copy; AdamSatvilker</em>
+    </p>
+    <p>Email: asatvilker.as@gmail.com</p>
+  </footer>
 </body>
 </html>
